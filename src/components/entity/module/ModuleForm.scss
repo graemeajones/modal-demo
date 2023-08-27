@@ -1,10 +1,13 @@
 $BorderGrey: LightGrey;
 
 div.moduleForm {
+  // Appearance
   width: 100%;
+  min-width: 400px;
   padding: 20px;
-  border: 1px solid $BorderGrey;
-  border-radius: 5px;
+  background: White;
+
+  // Layout
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -17,6 +20,10 @@ div.moduleForm {
     select {
       display: block;
       width: 100%;
+    }
+
+    label {
+      background: White;
     }
 
     select,
@@ -49,5 +56,9 @@ div.moduleForm {
         outline-color: $DarkGreen;
       }
     }
+  }
+
+  div.ActionTray {
+    width: 100%;
   }
 }
