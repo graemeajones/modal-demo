@@ -1,11 +1,11 @@
-import API_URL from "./apiURL.js";
+import API_URL from './apiURL.js';
 
 const API = {};
 
-API.get = (endpoint) => callFetch(endpoint, "GET", null);
-API.post = (endpoint, data) => callFetch(endpoint, "POST", data);
-API.put = (endpoint, data) => callFetch(endpoint, "PUT", data);
-API.delete = (endpoint) => callFetch(endpoint, "DELETE", null);
+API.get = (endpoint) => callFetch(endpoint, 'GET', null);
+API.post = (endpoint, data) => callFetch(endpoint, 'POST', data);
+API.put = (endpoint, data) => callFetch(endpoint, 'PUT', data);
+API.delete = (endpoint) => callFetch(endpoint, 'DELETE', null);
 
 const callFetch = async (endpoint, method, record) => {
   // Build request object
@@ -13,7 +13,7 @@ const callFetch = async (endpoint, method, record) => {
   if (record)
     requestObj = {
       ...requestObj,
-      headers: { "Content-type": "application/json" },
+      headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(record),
     };
 

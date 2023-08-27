@@ -1,4 +1,15 @@
 div.moduleCard {
-  width: 250px;
-  height: 300px;
+  // Appearance
+  width: 270px;
+  height: 310px;
+
+  div.moduleInfo {
+    // Appearance
+    margin-bottom: 20px;
+
+    img {
+      // Appearance
+      height: 150px;
+    }
+  }
 }
